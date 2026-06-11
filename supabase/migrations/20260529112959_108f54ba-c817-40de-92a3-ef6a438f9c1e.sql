@@ -1,0 +1,1 @@
+ALTER TABLE public.plant_users ADD COLUMN IF NOT EXISTS discord_user_id text;

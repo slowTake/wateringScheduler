@@ -1,0 +1,1 @@
+ALTER TABLE public.plant_users ADD COLUMN is_available boolean NOT NULL DEFAULT true;
