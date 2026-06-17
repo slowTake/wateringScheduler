@@ -47,11 +47,11 @@ export function statusLabel(s: PlantStatus): string {
 
 export function statusToneClasses(s: PlantStatus): string {
   return {
-    overdue: "bg-[var(--clay)]/15 text-[var(--clay)] border-[var(--clay)]/30",
-    due_today: "bg-[var(--sand)]/30 text-amber-800 border-[var(--sand)]/50",
-    due_soon: "bg-[var(--mint)]/40 text-[var(--leaf)] border-[var(--mint)]/60",
-    upcoming: "bg-muted text-muted-foreground border-border",
-    moist: "bg-[var(--sky)]/30 text-sky-900 border-[var(--sky)]/50",
+    overdue: "bg-[var(--clay)]/80 text-white border-[var(--clay)]/40",
+    due_today: "bg-[var(--sand)]/80 text-white border-[var(--sand)]/50",
+    due_soon: "bg-[var(--leaf)]/70 text-white border-[var(--mint)]/60",
+    upcoming: "bg-muted/80 text-foreground border-border",
+    moist: "bg-[var(--sky)]/80 text-foreground border-[var(--sky)]/50",
   }[s];
 }
 
