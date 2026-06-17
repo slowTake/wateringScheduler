@@ -57,7 +57,7 @@ export function PlantCard({ plant, users }: Props) {
             >
               {assignee.name[0]}
             </span>
-            <span className="text-sm text-muted-foreground">
+            <span className="text-sm text-foreground">
               <span className="font-medium text-foreground">{assignee.name}</span>'s turn
             </span>
           </div>
