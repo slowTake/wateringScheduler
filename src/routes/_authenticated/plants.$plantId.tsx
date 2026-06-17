@@ -345,16 +345,16 @@ function PlantDetail() {
               <div className="flex flex-col sm:flex-row gap-2">
                 <Button
                   size="lg"
-                  className="flex-1 rounded-full"
+                  className="flex-1 rounded-full min-h-14 text-base"
                   onClick={() => waterM.mutate()}
                   disabled={waterM.isPending}
                 >
-                  <Droplet className="size-4 mr-1" />I watered it
+                  I watered it
                 </Button>
                 <Dialog open={pushOpen} onOpenChange={setPushOpen}>
                   <DialogTrigger asChild>
-                    <Button variant="secondary" size="lg" className="flex-1 rounded-full">
-                      <MoonStar className="size-4 mr-1" /> Still moist
+                    <Button variant="secondary" size="lg" className="flex-1 rounded-full min-h-14 text-base">
+                      Still moist
                     </Button>
                   </DialogTrigger>
                   <DialogContent>

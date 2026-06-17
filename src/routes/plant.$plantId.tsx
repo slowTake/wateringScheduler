@@ -88,9 +88,7 @@ function PlantPublicPage() {
           <div className="relative aspect-[4/3] overflow-hidden bg-muted">
             <img src={plant.image_url} alt={plant.name} className="size-full object-cover" />
             <span
-              className={`absolute top-4 left-4 inline-flex items-center gap-1 rounded-full border px-3 py-1.5 text-sm font-semibold ${tone} ${
-                status === "overdue" ? "animate-pulse" : ""
-              }`}
+              className={`absolute top-4 left-4 inline-flex items-center gap-1 rounded-full border px-3 py-1.5 text-sm font-semibold backdrop-blur-md shadow-sm ${tone}`}
             >
               {statusLabel(status)}
             </span>
