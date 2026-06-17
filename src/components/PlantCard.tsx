@@ -34,9 +34,7 @@ export function PlantCard({ plant, users }: Props) {
           loading="lazy"
         />
         <span
-          className={`absolute top-3 left-3 inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-semibold ${tone} ${
-            status === "overdue" ? "animate-pulse" : ""
-          }`}
+          className={`absolute top-3 left-3 inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-semibold backdrop-blur-md shadow-sm ${tone}`}
         >
           {statusLabel(status)}
         </span>
